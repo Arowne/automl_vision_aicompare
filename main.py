@@ -7,7 +7,7 @@ from AutoMLVisionClient import AutoMLVisionClient
 def train_project():
     
     # Init class
-    client = AutoMLVisionClient(api_key='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiNDE3YTFmYWEtNTlmMy00NjAxLWExY2QtMDQyMDVjYTgzN2E3IiwidHlwZSI6ImFwaV90b2tlbiJ9.TW3k9J20ZfLThpJByWlERhDrrEni0MDJWHEfn3_InWU')
+    client = AutoMLVisionClient(api_key='api_key')
     counter = 0
 
     print('Project creation...')

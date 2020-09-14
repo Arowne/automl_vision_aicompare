@@ -18,7 +18,7 @@ class AutoMLVisionClient():
             
             response = requests.post(self.server_url + 'automl/vision/project', data=payload, headers=self.headers)
             data = response.json()
-
+            print(response.json())
             return data['project_id']
     
     def add_project_image(self, project_id=None, file_path=None):
