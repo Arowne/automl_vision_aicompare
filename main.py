@@ -6,7 +6,7 @@ from AutoMLVisionClient import AutoMLVisionClient
 def train_project():
     
     # # Init class
-    client = AutoMLVisionClient(api_key='')
+    client = AutoMLVisionClient(api_key='<your_api_key>')
 
     print('Project creation...')
     project_id = client.create_project(project_name='Floor plans classifier', project_description='Automaticaly count number of rooms')
@@ -37,6 +37,7 @@ def train_project():
 
     print('Launch train ...')
     print(project_id)
+    
     # You can switch provider between microsoft, google_cloud or aws
     train_id = client.train_project(project_id=project_id, training_name='Room classification google train', training_time=8000, provider='microsoft')
 
