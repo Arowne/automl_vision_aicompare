@@ -13,8 +13,8 @@ Simply add your api that you can retrieve in your  [ai-compare account](https://
 The dataset is present [here](https://github.com/Arowne/automl_vision_aicompare/tree/master/floor_plan_dataset) and is based on [ROBIN](https://github.com/gesstalt/ROBIN/blob/master/ROBIN.zip) floor plan dataset
 
 
-| Folder name   | Folder name   | Number of samples  |
-| ------------- |:-------------:| ------------------:|
-| 0             | 3             | 170                |
-| 1             | 4             | 170                |
-| 2             | 5             | 170                |
+| Folder name   | Label name         | Number of samples  |
+| ------------- |:------------------:| ------------------:|
+| 0             | 3 rooms            | 170                |
+| 1             | 4 rooms            | 170                |
+| 2             | 5  rooms           | 170                |
