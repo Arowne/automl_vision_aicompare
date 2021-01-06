@@ -40,7 +40,7 @@ def train_project():
     # You can switch provider between microsoft, google_cloud or aws
     train_id = client.train_project(project_id=project_id, training_name='Room classification google train', training_time=8000, provider='microsoft')
 
-    prediction = client.predict(provider="microsoft", project_id="1707cfd2-4802-4021-b233-e538ac29f0b9", train_id="dc4ff199-cb3e-4dae-8f3d-5eb3186b2800", image_path="floor_plan_dataset/0/Cat9_9.jpg", )
+    prediction = client.predict(provider="microsoft", project_id="train_id", train_id="project_id", image_path="floor_plan_dataset/0/Cat9_9.jpg", )
     print(prediction)
 
 if __name__ == "__main__":
