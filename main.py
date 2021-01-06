@@ -6,7 +6,7 @@ from AutoMLVisionClient import AutoMLVisionClient
 def train_project():
     
     # # Init class
-    client = AutoMLVisionClient(api_key='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYjFkOWRmNjYtYzFmOC00ZWIzLWIwNjktZDNjMmYxYjE1OTMzIiwidHlwZSI6ImFwaV90b2tlbiJ9.vc0IYayhFWbckFxqruWWb7-zAfmAzO7iOs7U59b5420')
+    client = AutoMLVisionClient(api_key='')
 
     print('Project creation...')
     project_id = client.create_project(project_name='Floor plans classifier', project_description='Automaticaly count number of rooms')
