@@ -67,7 +67,7 @@ class AutoMLVisionClient():
             data = response.json()
             print(data)
 
-            return data['train_id']
+            return data['results'][0]['training_state']['train_id']
 
     def predict(self, provider=None, image_path=None, train_id=None, project_id=None):
 

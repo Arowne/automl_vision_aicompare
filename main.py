@@ -6,7 +6,7 @@ from AutoMLVisionClient import AutoMLVisionClient
 def train_project():
     
     # # Init class
-    client = AutoMLVisionClient(api_key='')
+    client = AutoMLVisionClient(api_key='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYjFkOWRmNjYtYzFmOC00ZWIzLWIwNjktZDNjMmYxYjE1OTMzIiwidHlwZSI6ImFwaV90b2tlbiJ9.vc0IYayhFWbckFxqruWWb7-zAfmAzO7iOs7U59b5420')
 
     print('Project creation...')
     project_id = client.create_project(project_name='Floor plans classifier', project_description='Automaticaly count number of rooms')
@@ -37,10 +37,10 @@ def train_project():
 
     print('Launch train ...')
     print(project_id)
-    train_id = client.train_project(project_id=project_id, training_name='Room classification google train', training_time=8000, provider='google_cloud')
-    print(response)
+    # You can switch provider between microsoft, google_cloud or aws
+    train_id = client.train_project(project_id=project_id, training_name='Room classification google train', training_time=8000, provider='microsoft')
 
-    prediction = client.predict(provider="google_cloud", project_id=project_id, train_id=train_id, image_path="floor_plan_dataset/0/Cat9_9.jpg", )
+    prediction = client.predict(provider="microsoft", project_id="1707cfd2-4802-4021-b233-e538ac29f0b9", train_id="dc4ff199-cb3e-4dae-8f3d-5eb3186b2800", image_path="floor_plan_dataset/0/Cat9_9.jpg", )
     print(prediction)
 
 if __name__ == "__main__":
